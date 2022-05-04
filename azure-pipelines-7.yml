@@ -7,8 +7,8 @@ trigger:
 - master
 
 pool:
-  vmImage: Default
-
+  vmImage: linux-latest
+  Agent: Default
 steps:
 
 - task: DotNetCoreCLI@2
