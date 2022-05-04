@@ -6,7 +6,9 @@
 trigger:
 - master
 
-Agent: Default
+pool:
+  vmImage: ubuntu-latest
+  Agent: Default
 steps:
 
 - task: DotNetCoreCLI@2
