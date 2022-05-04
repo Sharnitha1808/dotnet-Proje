@@ -8,14 +8,14 @@ name: Web.ci
 trigger:
  branches:
   include:
-   -create-dotnet-pipeline
-  exclude:
-   -master
+   - create-dotnet-pipeline
+ exclude:
+    - master
  batch: true
 pool:
  vimage:'ubuntu-latest'
 variables:
-  buildconfigrations:'Release'
+  buildConfigurations:'Release'
 
 steps:
 - task:useDotnet@2
